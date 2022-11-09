@@ -1,0 +1,95 @@
+@import '/src/scss/fonts.scss';
+@import '/src/scss/mixin.scss';
+@import '/src/components/header';
+
+.container{
+    margin:15px 15px;
+    .skillz-block1{
+        h6{
+            color: #2D3748;
+            letter-spacing: 1px;
+            font-family: 'Cal Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 120%;
+            text-align: center;
+            @include tablet{
+                text-align: left;
+            }
+        }
+        p{
+            color: #2D3748;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 175%;
+            text-align: center;
+            @include tablet{
+                text-align: left;
+            }
+        }
+    }
+    .Development{
+        color: #2D3748;
+        letter-spacing: 1px;
+        font-family: 'Cal Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        text-align: center;
+        margin-bottom: 75px;
+        @include tablet{
+            text-align: left;
+        }
+    }
+    .skillz-block2{
+        .skillz-card{
+           .skillz-image{
+            display: flex;
+            justify-content: center;
+           }
+            h6{
+                color: #2D3748;
+                letter-spacing: 0.8px;
+                font-family: 'Cal Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 120%;
+                text-align: center;
+            }
+            p{
+                color: #718096;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                text-align: center;
+            }
+            @include tablet{
+                h6, p {
+                    margin: 0;
+                    text-align: left;
+                }
+                img{
+                    width: 60px;
+                    height: 60px;
+                }
+                display: flex;
+                gap:30.5px;
+                margin-top: 43px;
+            }
+            
+        }
+    }
+    @include tablet{
+        margin: 18px auto;
+        width: 768px;
+        align-items: center;
+        height: 60px;
+     }
+}
